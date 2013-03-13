@@ -31,7 +31,7 @@ public class LoginActivity extends Activity
 	{
 
 		private Spinner user_spinner;
-		private Button login,oauth;
+		private Button login,oauth,clientlogin;
 		private String user;
 		AccountManager am;
 		Account[] accounts;
@@ -97,8 +97,10 @@ public class LoginActivity extends Activity
 				login = (Button) findViewById(R.login.login);
 				oauth=(Button) findViewById(R.login.oauth);
 				user_spinner = initializeSpinner(R.login.spinner, getAccountNames(accounts));
+				clientlogin=(Button) findViewById(R.login.clienlogin);
 				login.setOnClickListener(onClickListener);
 				oauth.setOnClickListener(onClickListener);
+				clientlogin.setOnClickListener(onClickListener);
 			}
 
 		private String[] getAccountNames(Account[] accounts)
@@ -141,9 +143,13 @@ public class LoginActivity extends Activity
 										new OnTokenAcquired(), // Callback called when a token is successfully acquired
 										new Handler()); // Callback called if an error occurs
 							}
-						else{
+						else if(v.getId()==oauth.getId()){
 							Intent intent=new Intent(LoginActivity.this,LoginOauth2Activity.class);
 							startActivity(intent);
+						}
+						else{
+							Intent intet=new Intent(LoginActivity.this,ClientLoginActivity.class);
+							startActivity(intet);
 						}
 						
 					}

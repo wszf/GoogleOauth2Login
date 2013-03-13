@@ -26,4 +26,11 @@
         android:layout_height="wrap_content"
         android:text="oauth授权" />
 
+    <Button
+        android:id="@+login/clienlogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="clientlogin授权" >
+    </Button>
+
 </LinearLayout>

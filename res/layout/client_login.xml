@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+login/webview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+login/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="google邮箱" />
+
+    <EditText
+        android:id="@+login/pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码" />
+
+    <Button
+        android:id="@+login/client_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+login/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆" />
+
+</LinearLayout>

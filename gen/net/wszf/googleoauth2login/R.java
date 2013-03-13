@@ -19,13 +19,19 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
-        public static final int oauth_login=0x7f030001;
+        public static final int client_login=0x7f030001;
+        public static final int oauth_login=0x7f030002;
     }
     public static final class login {
+        public static final int clienlogin=0x7f070003;
+        public static final int client_login=0x7f070007;
+        public static final int email=0x7f070005;
         public static final int login=0x7f070001;
         public static final int oauth=0x7f070002;
+        public static final int pass=0x7f070006;
         public static final int spinner=0x7f070000;
-        public static final int webview=0x7f070003;
+        public static final int tips=0x7f070008;
+        public static final int webview=0x7f070004;
     }
     public static final class menu {
         public static final int activity_login=0x7f060000;
