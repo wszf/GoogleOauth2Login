@@ -1,1 +1,1 @@
-google android客户端2种登陆方式
+google Android客户端3种登陆方式
